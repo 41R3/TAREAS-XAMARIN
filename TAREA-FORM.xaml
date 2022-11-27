@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="100" />
+        </Grid.ColumnDefinitions>
+
+
+        <StackLayout  Grid.Row="1" Grid.Column="1"  BackgroundColor="LightSkyBlue"  >
+            <Label Text="FORMULARIO"  TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" TextDecorations="Underline" />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="NOMBRE:" TextColor="Coral"/>
+
+                <Entry Placeholder="Ingresa tu nombre" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+
+                <Label Text="EDAD:" TextColor="Coral"/>
+                <Entry Placeholder="Ingresa tu edad " TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="OCUPACION:" TextColor="Coral"/>
+                <Entry Placeholder="Ingresa tu ocupacion " TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="DIRECCION:" TextColor="Coral"/>
+                <Entry Placeholder="Ingresa tu direccion" TextColor="Black"/>
+            </StackLayout>
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>
