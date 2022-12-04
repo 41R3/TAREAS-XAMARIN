@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FORMCV.MainPage">
+
+    <ScrollView>
+        <StackLayout BackgroundColor="LightSkyBlue">
+        <StackLayout Orientation="Vertical">
+            <Label Text="Name:" x:Name="name"/>
+            <Entry Placeholder="Enter your name" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Age:"  x:Name="age"/>
+            <Entry Placeholder="Enter your age" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical"  x:Name="ocupation">
+            <Label Text="Occupation:" />
+                <Entry Placeholder="Enter your occupation" />
+        </StackLayout>
+        <Button Text="+"    Clicked="ButtonPlusOcupationClicked"/>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Address:" x:Name="adress"/>
+            <Entry Placeholder="Enter your address" />
+        </StackLayout>
+        <StackLayout>
+            <Button Text="Submit" Clicked="ButtonSubmitClicked"/>
+        </StackLayout>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
